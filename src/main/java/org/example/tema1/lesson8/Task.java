@@ -28,7 +28,7 @@ public class Task {
 //        System.out.println(max);
     }
 
-    private static String downloadWebPage(String url) throws URISyntaxException, IOException {
+    public static String downloadWebPage(String url) throws URISyntaxException, IOException {
         StringBuilder result = new StringBuilder();
         String line;
         URLConnection urlConnection = new URL(url).openConnection();
